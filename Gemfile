@@ -57,6 +57,7 @@ group :test do
 end
 
 group :production do
+  gem 'sqlite3'    #gem to use in development environment
   gem 'pg'         #gem to use in production environment
 end
 
