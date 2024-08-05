@@ -6,7 +6,8 @@ ruby '3.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 7.0.0' 
 
-# gem 'sqlite3', '~> 1.4'
+gem 'sqlite3', '~> 1.4'
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -44,7 +45,6 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'annotate'
   gem 'rexml'
-  gem 'sqlite3'    #gem to use in development environment
 end
 
 group :test do
@@ -54,11 +54,6 @@ group :test do
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
   gem 'rexml'
-end
-
-group :production do
-  gem 'sqlite3'    #gem to use in development environment
-  gem 'pg'         #gem to use in production environment
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
